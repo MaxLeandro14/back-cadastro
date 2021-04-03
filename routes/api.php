@@ -17,7 +17,7 @@ Route::post('/empresarios', 'EmpresariosController@cadastroEmpresarios');
 Route::get('/empresarios/rede/{id}', 'EmpresariosController@rede');
 Route::delete('/empresarios/{id}', 'EmpresariosController@delete');
 Route::get('/teste', function (Request $request) {
-    return "ok"
+    return "ok";
 });
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
